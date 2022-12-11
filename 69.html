@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPythagoreanTriple(integers){
+        integers.sort((a,b)=>a-b)
+        let [a,b,c]=integers
+       return a ** 2+b ** 2==c ** 2
+    }
+</script>
+</body>
+</html>
