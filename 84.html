@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  function sumOfDifferences(arr) {
+    let returnArray=arr.sort((a,b)=>b-a)
+    if( returnArray.length===0) return 0
+    let sum=0
+    for(let i=1;i<returnArray.length;i++){
+      sum+=returnArray[i-1]-returnArray[i]
+    }
+    return sum
+  }
+
+</script>
+</body>
+</html>>
