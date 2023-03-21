@@ -7,13 +7,22 @@
 <body>
 <script>
     //89
-  function squareOrSquareRoot(array) {
-    return array.map(el=>Math.sqrt(el) % 1 == 0?Math.sqrt(el):(el*el))
+    function squareOrSquareRoot(array) {
+        return array.map(el => Math.sqrt(el) % 1 == 0 ? Math.sqrt(el) : (el * el))
 
-  }
+    }
 
-  //90
-  websites.push('codewars')
+    //90
+    websites.push('codewars')
+
+    //91
+    function countBy(x, n) {
+        var z = [];
+        for (i = 1; i <= n; i++) {
+            z.push(x * i);
+        }
+        return z;
+    }
 </script>
 </body>
 </html>
