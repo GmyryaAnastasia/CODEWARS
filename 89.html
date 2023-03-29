@@ -26,12 +26,23 @@
 
     //92
     function periodIsLate(last, today, cycleLength) {
-        return ((today-last)/(60 * 60 * 24 * 1000))>cycleLength?true:false
+        return ((today - last) / (60 * 60 * 24 * 1000)) > cycleLength ? true : false
     }
 
     //93
-    function ifChuckSaysSo(){
+    function ifChuckSaysSo() {
         return !true
+    }
+
+    //94
+    function divisibleBy(numbers, divisor) {
+        let newArray = []
+        for (let i = 0; i <= numbers.length; i++) {
+            if (numbers[i] % divisor === 0) {
+                newArray.push(numbers[i])
+            }
+        }
+        return newArray
     }
 </script>
 </body>
