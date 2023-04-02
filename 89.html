@@ -46,12 +46,20 @@
     }
 
     //95
-    function smash (words) {
+    function smash(words) {
         return words.join(' ').trim()
     };
+
     //96
     function twoSort(s) {
         return s.sort()[0].split('').join('***');
+    }
+
+    //97
+    function positiveSum(arr) {
+        return arr.map(el => el > 0 ? el : 0).reduce((acc, number) => acc + number, 0)
+
+
     }
 </script>
 </body>
