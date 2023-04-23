@@ -68,3 +68,16 @@ function sumMix(x) {
     x.map(el => sum += Number(el))
     return sum
 }
+
+//100
+function well(x) {
+    const well = x => {
+        const good_count = x.filter(x => x == 'good').length;
+        return good_count < 1 ? 'Fail!' :
+            good_count < 3 ? 'Publish!' : 'I smell a series!';
+    }
+}
+
+//101
+items = []
+items.push({a: "b", c: "d"})
