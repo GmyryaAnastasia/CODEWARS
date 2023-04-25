@@ -81,3 +81,13 @@ function well(x) {
 //101
 items = []
 items.push({a: "b", c: "d"})
+
+//102
+function flattenAndSort(array) {
+    const newArray=array.reduce((acc,cv)=>acc.concat(cv),[]).sort((a,b)=>a-b)
+    return newArray;
+}
+//103
+function sortByLength (array) {
+    return array.sort ((a,b)=> a.length - b.length)
+};
