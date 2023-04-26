@@ -91,3 +91,9 @@ function flattenAndSort(array) {
 function sortByLength (array) {
     return array.sort ((a,b)=> a.length - b.length)
 };
+
+//104
+function noOdds( values ){
+    const newArr=values.filter(el=>el%2===0)
+    return newArr
+}
