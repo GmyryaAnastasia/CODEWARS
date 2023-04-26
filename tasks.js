@@ -97,3 +97,8 @@ function noOdds( values ){
     const newArr=values.filter(el=>el%2===0)
     return newArr
 }
+
+//105
+function betweenExtremes(numbers) {
+    return Math.max(...numbers)-Math.min(...numbers)
+}
