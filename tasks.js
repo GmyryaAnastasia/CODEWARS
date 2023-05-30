@@ -119,3 +119,11 @@ function outed(meet, boss){
     return sum/count<=5?'Get Out Now!': 'Nice Work Champ!'
 
 }
+
+//107
+function maxProduct(a) {
+    const maxValue1=Math.max(...a)
+    a.splice(a.indexOf(maxValue1),1)
+    const maxValue2=Math.max(...a)
+    return maxValue1*maxValue2
+}
