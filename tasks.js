@@ -127,3 +127,8 @@ function maxProduct(a) {
     const maxValue2=Math.max(...a)
     return maxValue1*maxValue2
 }
+
+//108
+function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '');
+}
