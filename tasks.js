@@ -171,3 +171,8 @@ function getCount(str) {
 function twoArePositive(a, b, c) {
     return [...arguments].filter(i => i > 0).length === 2;
 }
+
+//112
+var FilterString = function(value) {
+    return +value.replace(/\D+/g, '')
+}
