@@ -159,9 +159,9 @@ var AmIAfraid = function (day, num) {
 function getCount(str) {
     const vowels = 'aeiou'
     let countVowels = 0
-    for(let i=0;i<=str.length;i++){
-        if(vowels.indexOf(str[i])!==-1){
-            countVowels+=1
+    for (let i = 0; i <= str.length; i++) {
+        if (vowels.indexOf(str[i]) !== -1) {
+            countVowels += 1
         }
     }
     return countVowels
@@ -173,6 +173,19 @@ function twoArePositive(a, b, c) {
 }
 
 //112
-var FilterString = function(value) {
+const FilterString = function (value) {
     return +value.replace(/\D+/g, '')
+}
+
+//113
+function matrixAddition(a, b) {
+    const n = a.length
+    let matrix = Array.from({length: n}, () => Array(n).fill(0));
+
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            matrix[i][j] = a[i][j] + b[i][j]
+        }
+    }
+    return matrix
 }
