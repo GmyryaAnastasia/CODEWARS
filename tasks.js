@@ -189,3 +189,8 @@ function matrixAddition(a, b) {
     }
     return matrix
 }
+//114
+function twoHighest(arr) {
+    const uniqueArr = [...new Set(arr)].sort((a, b) => b - a);
+    return uniqueArr.slice(0, 2);
+}
