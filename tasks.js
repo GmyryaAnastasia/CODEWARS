@@ -194,3 +194,8 @@ function twoHighest(arr) {
     const uniqueArr = [...new Set(arr)].sort((a, b) => b - a);
     return uniqueArr.slice(0, 2);
 }
+//115
+var replaceDots = function(str) {
+    return str.replace(/\./g, '-');
+
+}
